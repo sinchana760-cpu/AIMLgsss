@@ -1,14 +1,10 @@
-hi
-hello
-sanika
-
 .container{
     width:60%;
     height: 450px;
-    background-color: rgb(243, 255, 255); 
+    background-color: rgb(13, 75, 231); 
     margin-top: 60px;
     margin-left: 20%;
-    border-top: 5px solid rgb(71, 71, 255);
+    border-top: 5px solid rgb(232, 11, 11);
     box-shadow: 1px 1px 5px  #888888;
    
 }

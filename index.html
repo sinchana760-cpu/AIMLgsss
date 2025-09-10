@@ -5,11 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>JavaScript Timer Web App</title>
+    <link rel="stylesheet" href="style.css">
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 50px;
-            background-color: #fafafa;
+            background-color: #93f2e2;
         }
 
         h1 {
@@ -41,7 +42,7 @@
 
     <h1>JavaScript Timer Web App</h1>
 
-    <h2>This timer will end on Wednesday 4th May 2022 at 03:30 PM</h2>
+    <h2>This timer will end on Wednesday 10 Sep 2025 at 03:30 PM</h2>
 
     <div class="countdown">
         <div>DAYS: <span id="days">0</span></div>
@@ -49,8 +50,6 @@
         <div>MINS: <span id="minutes">0</span></div>
         <div>SECS: <span id="seconds">0</span></div>
     </div>
-
-    <footer>Developed By Abdul Raza</footer>
 
     <script>
         // Set the target date/time
@@ -69,23 +68,3 @@
                 alert('Timer has ended!');
                 return;
             }
-
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            document.getElementById('days').textContent = days;
-            document.getElementById('hours').textContent = hours;
-            document.getElementById('minutes').textContent = minutes;
-            document.getElementById('seconds').textContent = seconds;
-        }
-
-        // Start countdown immediately and update every second
-        updateCountdown();
-        const timerInterval = setInterval(updateCountdown, 1000);
-    </script>
-
-</body>
-
-</html>
